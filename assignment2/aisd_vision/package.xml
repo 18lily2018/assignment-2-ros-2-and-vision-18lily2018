@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aisd_vision</name>
+  <version>0.0.0</version>
+  <description>Vision package for CST8504 Assignment 2 (image publisher + hand detection)</description>
+
+  <maintainer email="your_email@algonquinlive.com">18lily2018</maintainer>
+  <license>TODO: choose license, or leave as TODO for assignment</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>aisd_msgs</exec_depend>
+  <exec_depend>python3-mediapipe-pip</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+</package>
