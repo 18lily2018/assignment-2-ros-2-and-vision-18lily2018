@@ -1,23 +1,22 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 project(aisd_msgs)
 
-# 默认设置
-if(NOT CMAKE_C_STANDARD)
-  set(CMAKE_C_STANDARD 99)
+# Use stricter warnings in C++ if available (harmless for us, but standard template)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
-endif()
-
-# 依赖
+# -------- Dependencies --------
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
-# 生成接口（消息）
+# -------- Interface generation (msg + srv) --------
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Hand.msg"
+  "srv/Speak.srv"
 )
 
+# Export runtime deps so Python/C++ code can find the generated interfaces
 ament_export_dependencies(rosidl_default_runtime)
+
 ament_package()

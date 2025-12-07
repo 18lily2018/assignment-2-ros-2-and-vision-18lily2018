@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aisd_hearing</name>
+  <version>0.0.0</version>
+  <description>Hearing nodes for Assignment 3</description>
+
+
+  <maintainer email="aisd@example.com">aisd</maintainer>
+
+  <license>none</license>
+
+  <!-- ament_python build type -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- runtime deps -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>python3-pyaudio</depend>
+  <depend>portaudio19-dev</depend>
+  <depend>python3-pip</depend>
+
+  <!-- custom message/service package -->
+  <exec_depend>aisd_msgs</exec_depend>
+
+  <!-- optional test deps -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
