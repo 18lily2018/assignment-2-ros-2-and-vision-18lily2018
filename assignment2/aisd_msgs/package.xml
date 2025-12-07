@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aisd_msgs</name>
+  <version>0.0.0</version>
+  <description>Custom Hand message for CST8504 Assignment 2.</description>
+
+  <maintainer email="your_email@algonquinlive.com">18lily2018</maintainer>
+  <license>TODO: choose license, or leave as TODO for assignment</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- runtime dependencies -->
+  <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

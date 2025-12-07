@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aisd_motion</name>
+  <version>0.0.0</version>
+  <description>Motion package for CST8504 Assignment 2 (Move node).</description>
+
+  <maintainer email="your_email@algonquinlive.com">18lily2018</maintainer>
+  <license>TODO: choose license, or leave as TODO for assignment</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>aisd_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+</package>
